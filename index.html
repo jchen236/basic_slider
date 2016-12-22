@@ -4,6 +4,8 @@
 <head>
   <title> jQuery Slider </title>
   <link rel = "stylesheet" href = "css/slider.css">
+  <script src = "js/jquery.js"> </script>
+  <script src = "js/slider.js"> </script>
 </head>
 
 <body>
@@ -11,14 +13,16 @@
   <div class = "wrapper">
 
     <div id = "slider">
-      <img src = "images/image1.jpg">
-      <img src = "images/image2.jpg">
-      <img src = "images/image3.jpg">
-      <img src = "images/image4.jpg">
+      <img id = "img0" src = "images/image1.png">
+      <img id = "img1" src = "images/image2.png">
+      <img id = "img2" src = "images/image3.png">
+      <img id = "img3" src = "images/image4.png">
     </div>
 
-    <a href = "#" class = "left"> Previous </a>
-    <a href = "#" class = "right"> Next </a>
+    <a href = "#" class = "left" onclick = "prev(); return false;"> Previous </a>
+    <a href = "#" class = "right" onclick = "next(); return false;"> Next </a>
   </div>
+
+
 </body>
 </html>
